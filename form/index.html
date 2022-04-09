@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fill out a form">
+    <title>Form</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <link href="../styles/styles.css" rel="stylesheet">
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".menu-icon").addEventListener("click", () => {
+                document.querySelector(".main-menu").classList.toggle("menu-show");
+            });
+        });
+    </script>
+</head>
+<body class="form">
+    <div class="main-menu">
+        <div class="menu-icon">
+            <svg viewbox="0 0 60 60" width="60px" height="60px">
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+            </svg>
+        </div>
+
+        <nav>
+            <h2 class="hidden">Main Menu</h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../creatures/dragons/index.html">Dragons</a></li>
+                <li><a>Form</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Form</h1>
+        
+        <img class="formSVG" src="../images/8541859_dragon_icon.svg" alt="small black amphithere">
+        
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <form>
+            <label for="name" class="ask">Full name</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email" class="ask">Email address</label>
+            <input type="email" name="email" id="email" required>
+        
+            <label for="phone" class="ask">Phone number</label>
+            <input type="tel" name="phone" id="phone">
+
+            <label for="month" class="ask">The Month</label>
+            <input type="month" name="month" id="month">
+            
+            <p class="question">Which of the following interest you? (Check all that apply)</p>
+            <fieldset>
+                <input type="checkbox" id="dragon" name="creature" value="dragon">
+                <label for="dragon">Dragon</label>
+
+                <input type="checkbox" id="unicorn" name="creature" value="unicorn">
+                <label for="unicorn">Unicorn</label>
+
+                <input type="checkbox" id="vampire" name="creature" value="vampire">
+                <label for="vampire">Vampire</label>
+
+                <input type="checkbox" id="zombie" name="creature" value="zombie">
+                <label for="zombie">Zombie</label>
+
+                <input type="checkbox" id="giant" name="creature" value="giant">
+                <label for="giant">Giant</label>
+
+                <input type="checkbox" id="platypus" name="creature" value="platypus">
+                <label for="platypus">Platypus</label>
+            </fieldset>
+
+            <p class="question">What creature should be expanded on and improved in the next update?</p>
+            <fieldset>
+                <input type="radio" id="dragon" name="creature" value="dragon" required>
+                <label for="dragon">Dragon</label>
+
+                <input type="radio" id="unicorn" name="creature" value="unicorn">
+                <label for="unicorn">Unicorn</label>
+
+                <input type="radio" id="vampire" name="creature" value="vampire">
+                <label for="vampire">Vampire</label>
+
+                <input type="radio" id="zombie" name="creature" value="zombie">
+                <label for="zombie">Zombie</label>
+
+                <input type="radio" id="giant" name="creature" value="giant">
+                <label for="giant">Giant</label>
+
+                <input type="radio" id="platypus" name="creature" value="platypus">
+                <label for="platypus">Platypus</label>
+            </fieldset>
+
+            <label for="inform" class="question">What information or creatures should we add? Any corrections you may have as well.</label>
+            <textarea name="inform" id="inform" rows="10" placeholder="Enter info here"></textarea>
+
+            <button type="submit">Submit Now</button>
+        </form>
+    </main>
+</body>
+</html>
